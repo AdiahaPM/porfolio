@@ -1,4 +1,4 @@
-import { ArrowRight, Phone, Linkedin } from 'lucide-react';
+import { ArrowRight, Phone, Linkedin, Github } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Hero() {
@@ -71,10 +71,19 @@ export default function Hero() {
                       href="https://www.linkedin.com/in/itorodaniel"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-6 py-3 text-[#0E0E0E] hover:bg-[#F9F6F1] transition-colors"
+                      className="flex items-center gap-3 px-6 py-3 text-[#0E0E0E] hover:bg-[#F9F6F1] transition-colors border-b border-[#C4BAAE]"
                     >
                       <Linkedin className="w-5 h-5 text-blue-700" />
                       <span className="text-sm font-medium">LinkedIn</span>
+                    </a>
+                    <a
+                      href="https://github.com/AdiahaPM"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 px-6 py-3 text-[#0E0E0E] hover:bg-[#F9F6F1] transition-colors"
+                    >
+                      <Github className="w-5 h-5 text-gray-800" />
+                      <span className="text-sm font-medium">GitHub</span>
                     </a>
                   </div>
                 )}
