@@ -88,15 +88,15 @@ export default function FeaturedWork() {
                   className={`group relative p-6 sm:p-8 rounded-3xl glass-card overflow-hidden block transition-all duration-500 ${isLink ? 'hover:scale-105 cursor-pointer' : ''} transform animate-in fade-in`}
                   style={{animationDelay: `${index * 100}ms`}}
                 >
-                  <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-20 ${isLink ? 'group-hover:opacity-35' : ''} transition-opacity duration-500`}></div>
+                  <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-50 ${isLink ? 'group-hover:opacity-70' : ''} transition-opacity duration-500`}></div>
 
                   <div className="relative space-y-4 sm:space-y-6">
                     <div className="space-y-2">
-                      <p className="text-xs sm:text-sm text-[#D4A574] tracking-wide font-medium">{project.category}</p>
+                      <p className="text-xs sm:text-sm text-[#F0D9C9] tracking-wide font-medium">{project.category}</p>
                       <h3 className="text-2xl sm:text-3xl font-medium text-white">{project.title}</h3>
                     </div>
 
-                    <p className="text-sm sm:text-base text-[#C8C8C8] leading-relaxed">
+                    <p className="text-sm sm:text-base text-[#E8E8E8] leading-relaxed">
                       {project.description}
                     </p>
 
@@ -104,7 +104,7 @@ export default function FeaturedWork() {
                       {project.metrics.map((metric, idx) => (
                         <span
                           key={idx}
-                          className={`px-3 py-2 text-xs sm:text-sm bg-[#2D2D2D]/60 backdrop-blur-sm rounded-full text-[#E8B4A2] border border-[#D4A574]/30 transition-all duration-300 ${isLink ? 'group-hover:bg-[#3A3A3A] group-hover:border-[#D4A574]/50' : ''}`}
+                          className={`px-3 py-2 text-xs sm:text-sm bg-[#1A1A1A]/80 backdrop-blur-sm rounded-full text-[#F0D9C9] border border-[#D4A574]/50 transition-all duration-300 ${isLink ? 'group-hover:bg-[#0F0F0F] group-hover:border-[#E8B4A2]/70' : ''}`}
                         >
                           {metric}
                         </span>
@@ -112,7 +112,7 @@ export default function FeaturedWork() {
                     </div>
 
                     {isLink && (
-                      <div className="flex items-center gap-2 text-[#E8B4A2] font-medium group-hover:gap-3 transition-all">
+                      <div className="flex items-center gap-2 text-[#F0D9C9] font-medium group-hover:gap-3 transition-all">
                         View Project
                         <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                       </div>

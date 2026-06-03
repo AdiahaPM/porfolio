@@ -14,7 +14,7 @@ export default function Hero() {
           <div className="space-y-8 order-2 lg:order-1">
             <div className="space-y-6">
               <p className="text-[#D4A574] text-sm tracking-[0.3em] uppercase font-light animate-bounce-smooth">
-                Product Manager & Designer
+                Product Manager & AI Prototyper
               </p>
               <h1 className="text-5xl lg:text-7xl font-light text-white leading-tight">
                 Itoro<br />
@@ -23,7 +23,7 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="text-lg lg:text-xl text-[#B8B8B8] font-light leading-relaxed max-w-xl">
-                Crafting elegant SaaS and AI-driven products from discovery to delivery. Specialized in user-centric design and strategic product development.
+                Passionate about turning ideas into products people love. I combine product strategy, user research, AI workflows, and rapid prototyping to bring concepts to life.
               </p>
             </div>
 

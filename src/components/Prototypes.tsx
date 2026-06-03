@@ -81,16 +81,16 @@ export default function Prototypes() {
                 className="group relative p-6 sm:p-8 rounded-3xl glass-card overflow-hidden block transition-all duration-500 hover:scale-105 cursor-pointer transform animate-in fade-in"
                 style={{animationDelay: `${index * 100}ms`}}
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${prototype.gradient} opacity-20 group-hover:opacity-35 transition-opacity duration-500`}></div>
+                <div className={`absolute inset-0 bg-gradient-to-br ${prototype.gradient} opacity-50 group-hover:opacity-70 transition-opacity duration-500`}></div>
 
                 <div className="relative space-y-3 sm:space-y-4">
                   <h3 className="text-xl sm:text-2xl font-medium text-white">{prototype.title}</h3>
 
-                  <p className="text-sm sm:text-base text-[#C8C8C8] leading-relaxed">
+                  <p className="text-sm sm:text-base text-[#E8E8E8] leading-relaxed">
                     {prototype.description}
                   </p>
 
-                  <div className="flex items-center gap-2 text-[#E8B4A2] font-medium group-hover:gap-3 transition-all pt-2">
+                  <div className="flex items-center gap-2 text-[#F0D9C9] font-medium group-hover:gap-3 transition-all pt-2">
                     Open Prototype
                     <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </div>

@@ -236,8 +236,8 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-  animation: mirrorShine 3s infinite;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.6) 20%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.6) 80%, transparent 100%);
+  animation: mirrorShine 2.5s ease-in-out infinite;
   pointer-events: none;
 }
 
@@ -331,6 +331,27 @@
   }
 }
 
+/* Enhanced mirror shine animation */
+@keyframes mirrorShine {
+  0% {
+    background-position: -1000px center;
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    background-position: 1000px center;
+    opacity: 0;
+  }
+}
+
 .skeumorphic-button {
   position: relative;
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(245, 240, 235, 0.85) 100%);
@@ -351,8 +372,9 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-  animation: mirrorShine 3s infinite;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.6) 20%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.6) 80%, transparent 100%);
+  animation: mirrorShine 2.5s ease-in-out infinite;
+  pointer-events: none;
 }
 
 .skeumorphic-button:hover {
