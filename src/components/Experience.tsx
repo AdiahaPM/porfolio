@@ -59,20 +59,20 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section className="py-32 px-6 lg:px-8 bg-[#F9F6F1] bg-animate-particles">
+    <section className="py-32 px-6 lg:px-8 bg-[#1A1A1A] bg-animate-particles">
       <div className="max-w-6xl mx-auto">
         <div className="space-y-16">
           <div className="space-y-4">
-            <p className="text-[#A8907E] text-sm tracking-[0.2em] uppercase font-light">
+            <p className="text-[#D4A574] text-sm tracking-[0.3em] uppercase font-light">
               Experience
             </p>
-            <h2 className="text-4xl lg:text-5xl font-light text-[#0E0E0E]">
+            <h2 className="text-4xl lg:text-5xl font-light text-white">
               Experience
             </h2>
           </div>
 
           <div className="relative">
-            <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-[#A8907E] via-[#D4C4B0] to-transparent"></div>
+            <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-[#D4A574] via-[#E8B4A2] to-transparent"></div>
 
             <div className="space-y-16 pl-8 lg:pl-16">
               {experiences.map((exp, index) => (
@@ -80,19 +80,19 @@ export default function Experience() {
                   key={index}
                   className="relative group"
                 >
-                  <div className="absolute -left-8 lg:-left-16 top-2 w-3 h-3 rounded-full bg-[#A8907E] border-4 border-[#F9F6F1] group-hover:scale-150 transition-transform duration-300"></div>
+                  <div className="absolute -left-8 lg:-left-16 top-2 w-3 h-3 rounded-full bg-[#E8B4A2] border-4 border-[#1A1A1A] group-hover:scale-150 transition-transform duration-300"></div>
 
-                  <div className="space-y-4 p-6 rounded-2xl bg-white/50 backdrop-blur-sm border border-[#E8DED2] hover:shadow-lg hover:bg-white/80 hover:scale-105 transition-all duration-300 transform">
+                  <div className="space-y-4 p-6 rounded-2xl bg-[#2D2D2D]/60 backdrop-blur-sm border border-[#D4A574]/20 hover:shadow-lg hover:bg-[#3A3A3A]/80 hover:scale-105 hover:border-[#D4A574]/40 transition-all duration-300 transform">
                     <div className="space-y-2">
-                      <h3 className="text-2xl font-medium text-[#0E0E0E]">{exp.role}</h3>
-                      <p className="text-[#6C5F5B] font-light">{exp.company} | {exp.location}</p>
-                      <p className="text-sm text-[#A8907E]">{exp.period}</p>
+                      <h3 className="text-2xl font-medium text-white">{exp.role}</h3>
+                      <p className="text-[#C8C8C8] font-light">{exp.company} | {exp.location}</p>
+                      <p className="text-sm text-[#D4A574]">{exp.period}</p>
                     </div>
 
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, idx) => (
-                        <li key={idx} className="flex items-start gap-3 text-[#6C5F5B]">
-                          <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#A8907E] flex-shrink-0"></span>
+                        <li key={idx} className="flex items-start gap-3 text-[#A8A8A8]">
+                          <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#E8B4A2] flex-shrink-0"></span>
                           <span>{achievement}</span>
                         </li>
                       ))}

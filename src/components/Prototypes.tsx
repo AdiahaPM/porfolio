@@ -59,14 +59,14 @@ const prototypes = [
 
 export default function Prototypes() {
   return (
-    <section id="prototypes" className="py-32 px-6 lg:px-8 bg-gradient-to-br from-[#F9F6F1] to-white bg-animate-particles">
+    <section id="prototypes" className="py-32 px-6 lg:px-8 bg-gradient-to-br from-[#1A1A1A] to-[#252525] bg-animate-particles">
       <div className="max-w-7xl mx-auto">
         <div className="space-y-16">
           <div className="space-y-4">
-            <p className="text-[#6D5C54] text-sm tracking-[0.2em] uppercase font-light">
+            <p className="text-[#D4A574] text-sm tracking-[0.3em] uppercase font-light">
               Interactive Designs
             </p>
-            <h2 className="text-4xl lg:text-5xl font-light text-[#0E0E0E]">
+            <h2 className="text-4xl lg:text-5xl font-light text-white">
               Prototypes
             </h2>
           </div>
@@ -81,16 +81,16 @@ export default function Prototypes() {
                 className="group relative p-6 sm:p-8 rounded-3xl glass-card overflow-hidden block transition-all duration-500 hover:scale-105 cursor-pointer transform animate-in fade-in"
                 style={{animationDelay: `${index * 100}ms`}}
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${prototype.gradient} opacity-40 group-hover:opacity-60 transition-opacity duration-500`}></div>
+                <div className={`absolute inset-0 bg-gradient-to-br ${prototype.gradient} opacity-20 group-hover:opacity-35 transition-opacity duration-500`}></div>
 
                 <div className="relative space-y-3 sm:space-y-4">
-                  <h3 className="text-xl sm:text-2xl font-medium text-[#0E0E0E]">{prototype.title}</h3>
+                  <h3 className="text-xl sm:text-2xl font-medium text-white">{prototype.title}</h3>
 
-                  <p className="text-sm sm:text-base text-[#4A3F38] leading-relaxed">
+                  <p className="text-sm sm:text-base text-[#C8C8C8] leading-relaxed">
                     {prototype.description}
                   </p>
 
-                  <div className="flex items-center gap-2 text-[#0E0E0E] font-medium group-hover:gap-3 transition-all pt-2">
+                  <div className="flex items-center gap-2 text-[#E8B4A2] font-medium group-hover:gap-3 transition-all pt-2">
                     Open Prototype
                     <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </div>
