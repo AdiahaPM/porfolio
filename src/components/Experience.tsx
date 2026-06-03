@@ -80,19 +80,19 @@ export default function Experience() {
                   key={index}
                   className="relative group"
                 >
-                  <div className="absolute -left-8 lg:-left-16 top-2 w-3 h-3 rounded-full bg-[#E8B4A2] border-4 border-[#1A1A1A] group-hover:scale-150 transition-transform duration-300"></div>
+                  <div className="absolute -left-8 lg:-left-16 top-2 w-3 h-3 rounded-full bg-gradient-to-r from-[#D4A574] to-[#E8B4A2] border-4 border-[#1A1A1A] group-hover:scale-150 transition-transform duration-300 shadow-lg"></div>
 
-                  <div className="space-y-4 p-6 rounded-2xl bg-[#2D2D2D]/60 backdrop-blur-sm border border-[#D4A574]/20 hover:shadow-lg hover:bg-[#3A3A3A]/80 hover:scale-105 hover:border-[#D4A574]/40 transition-all duration-300 transform">
+                  <div className="space-y-4 p-6 rounded-2xl bg-gradient-to-br from-[#F5F0EB] to-[#EFEFEF] border border-[#C4B8AE] hover:shadow-lg hover:bg-white hover:scale-105 hover:border-[#D4A574]/60 transition-all duration-300 transform skeumorphic-card">
                     <div className="space-y-2">
-                      <h3 className="text-2xl font-medium text-white">{exp.role}</h3>
-                      <p className="text-[#C8C8C8] font-light">{exp.company} | {exp.location}</p>
-                      <p className="text-sm text-[#D4A574]">{exp.period}</p>
+                      <h3 className="text-2xl font-medium text-[#1A1A1A]">{exp.role}</h3>
+                      <p className="text-[#5A5A5A] font-light">{exp.company} | {exp.location}</p>
+                      <p className="text-sm text-[#6B5C51]">{exp.period}</p>
                     </div>
 
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, idx) => (
-                        <li key={idx} className="flex items-start gap-3 text-[#A8A8A8]">
-                          <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#E8B4A2] flex-shrink-0"></span>
+                        <li key={idx} className="flex items-start gap-3 text-[#3A3A3A]">
+                          <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#D4A574] flex-shrink-0"></span>
                           <span>{achievement}</span>
                         </li>
                       ))}

@@ -84,13 +84,13 @@ export default function Prototypes() {
                 <div className={`absolute inset-0 bg-gradient-to-br ${prototype.gradient} opacity-50 group-hover:opacity-70 transition-opacity duration-500`}></div>
 
                 <div className="relative space-y-3 sm:space-y-4">
-                  <h3 className="text-xl sm:text-2xl font-medium text-white">{prototype.title}</h3>
+                  <h3 className="text-xl sm:text-2xl font-medium text-[#1A1A1A]">{prototype.title}</h3>
 
-                  <p className="text-sm sm:text-base text-[#E8E8E8] leading-relaxed">
+                  <p className="text-sm sm:text-base text-[#3A3A3A] leading-relaxed">
                     {prototype.description}
                   </p>
 
-                  <div className="flex items-center gap-2 text-[#F0D9C9] font-medium group-hover:gap-3 transition-all pt-2">
+                  <div className="flex items-center gap-2 text-[#3A3A3A] font-medium group-hover:gap-3 transition-all pt-2">
                     Open Prototype
                     <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </div>

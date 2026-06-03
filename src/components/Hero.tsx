@@ -45,45 +45,45 @@ export default function Hero() {
                 Download CV
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
-              <div className="relative">
+              <div className="relative z-50">
                 <button
                   onClick={() => setShowContact(!showContact)}
-                  className="px-8 py-4 border-2 border-[#D4A574] text-[#D4A574] rounded-full hover:bg-[#D4A574] hover:text-[#1A1A1A] transition-all duration-300 font-medium"
+                  className="px-8 py-4 border-2 border-[#D4A574] text-[#D4A574] rounded-full hover:bg-[#D4A574] hover:text-[#1A1A1A] transition-all duration-300 font-medium skeumorphic-button"
                 >
                   Get in Touch
                 </button>
                 {showContact && (
-                  <div className="absolute top-full right-0 mt-3 bg-[#2D2D2D] border border-[#D4A574]/30 rounded-2xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 z-50">
+                  <div className="absolute top-full right-0 mt-4 bg-gradient-to-br from-[#F5F0EB] to-[#EFEFEF] border border-[#C4B8AE] rounded-2xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 z-50 min-w-[240px]">
                     <a
                       href="mailto:itorod01@gmail.com"
-                      className="flex items-center gap-3 px-6 py-3 text-white hover:bg-[#3A3A3A] transition-colors border-b border-[#D4A574]/20 group/item"
+                      className="flex items-center gap-3 px-6 py-4 text-[#2C2C2C] hover:bg-[#E8DED2] transition-colors border-b border-[#D4C4B0] group/item"
                     >
-                      <span className="w-5 h-5 text-[#E8B4A2]">✉</span>
+                      <span className="w-5 h-5 text-red-600">✉</span>
                       <span className="text-sm font-medium">Email</span>
                     </a>
                     <a
                       href="tel:+2348130312380"
-                      className="flex items-center gap-3 px-6 py-3 text-white hover:bg-[#3A3A3A] transition-colors border-b border-[#D4A574]/20"
+                      className="flex items-center gap-3 px-6 py-4 text-[#2C2C2C] hover:bg-[#E8DED2] transition-colors border-b border-[#D4C4B0]"
                     >
-                      <Phone className="w-5 h-5 text-[#D4A574]" />
+                      <Phone className="w-5 h-5 text-blue-600" />
                       <span className="text-sm font-medium">Call</span>
                     </a>
                     <a
                       href="https://www.linkedin.com/in/itorodaniel"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-6 py-3 text-white hover:bg-[#3A3A3A] transition-colors border-b border-[#D4A574]/20"
+                      className="flex items-center gap-3 px-6 py-4 text-[#2C2C2C] hover:bg-[#E8DED2] transition-colors border-b border-[#D4C4B0]"
                     >
-                      <Linkedin className="w-5 h-5 text-[#E8B4A2]" />
+                      <Linkedin className="w-5 h-5 text-blue-700" />
                       <span className="text-sm font-medium">LinkedIn</span>
                     </a>
                     <a
                       href="https://github.com/AdiahaPM"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-6 py-3 text-white hover:bg-[#3A3A3A] transition-colors"
+                      className="flex items-center gap-3 px-6 py-4 text-[#2C2C2C] hover:bg-[#E8DED2] transition-colors"
                     >
-                      <Github className="w-5 h-5 text-[#D4A574]" />
+                      <Github className="w-5 h-5 text-gray-800" />
                       <span className="text-sm font-medium">GitHub</span>
                     </a>
                   </div>

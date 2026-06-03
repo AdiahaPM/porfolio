@@ -92,11 +92,11 @@ export default function FeaturedWork() {
 
                   <div className="relative space-y-4 sm:space-y-6">
                     <div className="space-y-2">
-                      <p className="text-xs sm:text-sm text-[#F0D9C9] tracking-wide font-medium">{project.category}</p>
-                      <h3 className="text-2xl sm:text-3xl font-medium text-white">{project.title}</h3>
+                      <p className="text-xs sm:text-sm text-[#6B5C51] tracking-wide font-medium">{project.category}</p>
+                      <h3 className="text-2xl sm:text-3xl font-medium text-[#1A1A1A]">{project.title}</h3>
                     </div>
 
-                    <p className="text-sm sm:text-base text-[#E8E8E8] leading-relaxed">
+                    <p className="text-sm sm:text-base text-[#3A3A3A] leading-relaxed">
                       {project.description}
                     </p>
 
@@ -104,7 +104,7 @@ export default function FeaturedWork() {
                       {project.metrics.map((metric, idx) => (
                         <span
                           key={idx}
-                          className={`px-3 py-2 text-xs sm:text-sm bg-[#1A1A1A]/80 backdrop-blur-sm rounded-full text-[#F0D9C9] border border-[#D4A574]/50 transition-all duration-300 ${isLink ? 'group-hover:bg-[#0F0F0F] group-hover:border-[#E8B4A2]/70' : ''}`}
+                          className={`px-3 py-2 text-xs sm:text-sm bg-[#F5F0EB]/90 backdrop-blur-sm rounded-full text-[#3A3A3A] border border-[#D4A574]/40 transition-all duration-300 ${isLink ? 'group-hover:bg-white group-hover:border-[#D4A574]/70 group-hover:text-[#1A1A1A]' : ''}`}
                         >
                           {metric}
                         </span>
@@ -112,7 +112,7 @@ export default function FeaturedWork() {
                     </div>
 
                     {isLink && (
-                      <div className="flex items-center gap-2 text-[#F0D9C9] font-medium group-hover:gap-3 transition-all">
+                      <div className="flex items-center gap-2 text-[#3A3A3A] font-medium group-hover:gap-3 transition-all">
                         View Project
                         <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                       </div>

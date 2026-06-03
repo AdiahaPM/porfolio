@@ -42,11 +42,11 @@ export default function Projects() {
                   style={{animationDelay: `${index * 100}ms`}}
                 >
                   <div className="relative space-y-4 sm:space-y-6">
-                    <h3 className="text-xl sm:text-2xl font-medium text-white group-hover:text-[#E8B4A2] transition-colors">
+                    <h3 className="text-xl sm:text-2xl font-medium text-[#1A1A1A] group-hover:text-[#6B5C51] transition-colors">
                       {project.title}
                     </h3>
 
-                    <p className="text-sm sm:text-base text-[#C8C8C8] leading-relaxed">
+                    <p className="text-sm sm:text-base text-[#3A3A3A] leading-relaxed">
                       {project.description}
                     </p>
 
@@ -54,7 +54,7 @@ export default function Projects() {
                       {project.tags.map((tag, idx) => (
                         <span
                           key={idx}
-                          className="px-3 py-1 text-xs sm:text-xs bg-[#2D2D2D]/60 rounded-full text-[#E8B4A2] border border-[#D4A574]/30 group-hover:bg-[#D4A574]/20 group-hover:border-[#D4A574]/50 transition-all duration-300"
+                          className="px-3 py-1 text-xs sm:text-xs bg-[#F5F0EB]/90 rounded-full text-[#3A3A3A] border border-[#D4A574]/30 group-hover:bg-[#D4A574]/20 group-hover:border-[#D4A574]/50 group-hover:text-[#1A1A1A] transition-all duration-300"
                         >
                           {tag}
                         </span>
