@@ -45,7 +45,7 @@ export default function Hero() {
                 Download CV
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
-              <div className="relative">
+              <div className="relative z-50">
                 <button
                   onClick={() => setShowContact(!showContact)}
                   className="px-8 py-4 border-2 border-[#D4A574] text-[#D4A574] rounded-full hover:bg-[#D4A574] hover:text-[#1A1A1A] transition-all duration-300 font-medium skeumorphic-button"
@@ -53,40 +53,46 @@ export default function Hero() {
                   Get in Touch
                 </button>
                 {showContact && (
-                  <div className="absolute top-full left-0 mt-3 bg-gradient-to-br from-[#F5F0EB] to-[#EFEFEF] border border-[#C4B8AE] rounded-xl shadow-lg overflow-hidden animate-in fade-in slide-in-from-top-2 z-50 w-48">
+                  <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-br from-[#F5F0EB] to-[#EFEFEF] border border-[#C4B8AE] rounded-2xl shadow-2xl overflow-hidden animate-in fade-in z-50 min-w-[280px]">
                     <a
                       href="mailto:itorod01@gmail.com"
-                      className="flex items-center gap-3 px-4 py-3 text-[#2C2C2C] hover:bg-[#E8DED2] transition-colors border-b border-[#D4C4B0] group/item text-sm"
+                      className="flex items-center gap-3 px-6 py-4 text-[#2C2C2C] hover:bg-[#E8DED2] transition-colors border-b border-[#D4C4B0] group/item"
                     >
-                      <span className="text-red-600">✉</span>
-                      <span className="font-medium">Email</span>
+                      <span className="w-5 h-5 text-red-600">✉</span>
+                      <span className="text-sm font-medium">Email</span>
                     </a>
                     <a
                       href="tel:+2348130312380"
-                      className="flex items-center gap-3 px-4 py-3 text-[#2C2C2C] hover:bg-[#E8DED2] transition-colors border-b border-[#D4C4B0] text-sm"
+                      className="flex items-center gap-3 px-6 py-4 text-[#2C2C2C] hover:bg-[#E8DED2] transition-colors border-b border-[#D4C4B0]"
                     >
-                      <Phone className="w-4 h-4 text-blue-600" />
-                      <span className="font-medium">Call</span>
+                      <Phone className="w-5 h-5 text-blue-600" />
+                      <span className="text-sm font-medium">Call</span>
                     </a>
                     <a
                       href="https://www.linkedin.com/in/itorodaniel"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-4 py-3 text-[#2C2C2C] hover:bg-[#E8DED2] transition-colors border-b border-[#D4C4B0] text-sm"
+                      className="flex items-center gap-3 px-6 py-4 text-[#2C2C2C] hover:bg-[#E8DED2] transition-colors border-b border-[#D4C4B0]"
                     >
-                      <Linkedin className="w-4 h-4 text-blue-700" />
-                      <span className="font-medium">LinkedIn</span>
+                      <Linkedin className="w-5 h-5 text-blue-700" />
+                      <span className="text-sm font-medium">LinkedIn</span>
                     </a>
                     <a
                       href="https://github.com/AdiahaPM"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-4 py-3 text-[#2C2C2C] hover:bg-[#E8DED2] transition-colors text-sm"
+                      className="flex items-center gap-3 px-6 py-4 text-[#2C2C2C] hover:bg-[#E8DED2] transition-colors"
                     >
-                      <Github className="w-4 h-4 text-gray-800" />
-                      <span className="font-medium">GitHub</span>
+                      <Github className="w-5 h-5 text-gray-800" />
+                      <span className="text-sm font-medium">GitHub</span>
                     </a>
                   </div>
+                )}
+                {showContact && (
+                  <div
+                    className="fixed inset-0 z-40"
+                    onClick={() => setShowContact(false)}
+                  ></div>
                 )}
               </div>
             </div>
