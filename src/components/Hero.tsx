@@ -53,7 +53,7 @@ export default function Hero() {
                   Get in Touch
                 </button>
                 {showContact && (
-                  <div className="absolute top-full right-0 mt-4 bg-gradient-to-br from-[#F5F0EB] to-[#EFEFEF] border border-[#C4B8AE] rounded-2xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 z-50 min-w-[240px]">
+                  <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-br from-[#F5F0EB] to-[#EFEFEF] border border-[#C4B8AE] rounded-2xl shadow-2xl overflow-hidden animate-in fade-in z-50 min-w-[280px]">
                     <a
                       href="mailto:itorod01@gmail.com"
                       className="flex items-center gap-3 px-6 py-4 text-[#2C2C2C] hover:bg-[#E8DED2] transition-colors border-b border-[#D4C4B0] group/item"
@@ -87,6 +87,12 @@ export default function Hero() {
                       <span className="text-sm font-medium">GitHub</span>
                     </a>
                   </div>
+                )}
+                {showContact && (
+                  <div
+                    className="fixed inset-0 z-40"
+                    onClick={() => setShowContact(false)}
+                  ></div>
                 )}
               </div>
             </div>
